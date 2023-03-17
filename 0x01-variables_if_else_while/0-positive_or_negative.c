@@ -1,11 +1,17 @@
 #include <stdlib.h>
+
 #include <time.h>
+
 #include <stdio.h>
+
+
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/* main function determines if the number is negative positive or zero*/
 int main(void)
 {
+
 	int n;
 
 	srand(time(0));
@@ -14,19 +20,19 @@ int main(void)
 	
 	if (n>0)
 	{
-		printf("%d is positive\n",n);
+	printf("%d is positive\n",n);
 	}
 
 	else if (n==0)
-		{
-                printf("%d is zero\n",n);
-       		}
+	{
+        printf("%d is zero\n",n);
+       	}
 	else if (n<0)
-		{
-                printf("%d is negative\n",n);
-        	}
+	{
+        printf("%d is negative\n",n);
+        }
 	else
-		printf("the number you entered is invalid, please try again");
+	printf("the number you entered is invalid, please try again");
 	
 	return (0);
 }
