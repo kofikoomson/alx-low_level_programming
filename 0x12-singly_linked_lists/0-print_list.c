@@ -2,8 +2,9 @@
 
 /**
  * print_list - prints the elements of linked list
- * @h: list to list_t
- * Return: counter for nodes
+ * @h: pointer to list_t
+ *
+ * Return: counter for i
  */
 size_t print_list(const list_t *h)
 {
@@ -13,8 +14,10 @@ size_t print_list(const list_t *h)
 	{
 		if (!h->str)
 			printf("[0] (nil)\n");
+
 		else
 			printf("[%u] %s\n", h->len, h->str);
+
 		h = h->next;
 		i++;
 	}
