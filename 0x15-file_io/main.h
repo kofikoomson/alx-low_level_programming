@@ -17,4 +17,20 @@ void close_file(int fd);
 int _putchar(char c);
 int main(int argc, char *argv[]);
 
+/*HEADER PROJECT */
+
+#include <elf.h>
+#include <fcntl.h>
+
+void CheckElf(unsigned char *e_identifier);
+void PrintMagic(unsigned char *e_identifier);
+void PrintClass(unsigned char *e_identifier);
+void PrintData(unsigned char *e_identifier);
+void PrintVersion(unsigned char *e_identifier);
+void PrintAbi(unsigned char *e_identifier);
+void PrintOsabi(unsigned char *e_identifier);
+void PrintType(unsigned int eType, unsigned char *e_identifier);
+void PrintEntry(unsigned long int eEntry, unsigned char *e_identifier);
+void CloseElf(int elf);
+
 #endif
