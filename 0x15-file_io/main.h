@@ -15,6 +15,6 @@ int append_text_to_file(const char *filename, char *text_content);
 char *create_buffer(char *file);
 void close_file(int fd);
 int _putchar(char c);
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]);
 
 #endif
